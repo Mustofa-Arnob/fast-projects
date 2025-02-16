@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 sticky-top">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cart</h5>
+                        <div id="cart-items" class="mb-3"></div>
+                        <p id="total-price">Total Price (Excl. VAT & Shipping): $0</p>
+                        <p id="vat">VAT (10%): $0</p>
+                        <p id="delivery-charge">Delivery Charge: $0</p>
+                        <p id="checkout-price">Checkout Price (Incl. VAT & Shipping): $0</p>
+                        <button id="checkout" class="btn btn-primary w-100" disabled>Checkout</button>
+                        <button id="clear-cart" class="btn btn-danger w-100 mt-2">Clear Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>Products</h1>
+                <div class="row" id="product-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
